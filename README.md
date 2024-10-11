@@ -32,7 +32,17 @@ This project is a Python-based bot built using the `Aiogram` and `Telethon` libr
     - Open api.py
     - Find and replace the placeholder values with your actual bot token, api_id, and api_hash:
 ```bash
-BOT_TOKEN = "your_bot_token_here"
+TOKEN = "your_bot_token_here"
 api_id = "your_api_id_here"
 api_hash = "your_api_hash_here"
+```
 
+### Usage
+1. Start the bot:
+```bash
+python bot.py
+```
+2. Send the bot a nickname, and it will return the corresponding user ID, provided the nickname is valid.
+
+#### Validation
+The bot includes nickname validation to ensure the provided nickname is a valid Telegram username.
